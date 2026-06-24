@@ -101,7 +101,7 @@ export const downloadGeneralApprovedPDF = (applications: StartupApplication[]) =
     doc.text("Mas'ul shaxslar imsolari:", 15, finalY);
 
     doc.setFont("helvetica", "normal");
-    doc.text("Loyiha koordinatori: _____________________  (U. Abdullayev)", 15, finalY + 10);
+    doc.text("Loyiha koordinatori: _____________________  (I. Abdullayev)", 15, finalY + 10);
     doc.text("Komissiya raisi:        _____________________  (JizPi Rektorati)", 15, finalY + 18);
   }
 
@@ -262,7 +262,7 @@ export const downloadIndividualTeamPDF = (app: StartupApplication) => {
     
     doc.setFont("helvetica", "normal");
     doc.text("Loyiha Sardori:  _________________ / _________________", 15, lastY + 8);
-    doc.text("Admin (Koordinator): _______________ (U. Abdullayev)", 15, lastY + 16);
+    doc.text("Admin (Koordinator): _______________ (I. Abdullayev)", 15, lastY + 16);
 
     // Mini Approved Stamp visual
     if (app.status === "approved") {
