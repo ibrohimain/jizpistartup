@@ -1,0 +1,6 @@
+{
+  "name": "JizPi StartUp Ligasi",
+  "description": "JizPi StartUp ligasi jamoalari va loyihalarini ro'yxatdan o'tkazish hamda boshqarish platformasi",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

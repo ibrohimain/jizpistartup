@@ -1,0 +1,40 @@
+{
+  "entities": {
+    "StartupApplication": {
+      "title": "StartupApplication",
+      "description": "StartUp application submitted by teams",
+      "type": "object",
+      "properties": {
+        "id": { "type": "string" },
+        "applicantName": { "type": "string" },
+        "applicantOccupation": { "type": "string" },
+        "residenceRegion": { "type": "string" },
+        "residenceCityDistrict": { "type": "string" },
+        "teamName": { "type": "string" },
+        "teamSize": { "type": "integer" },
+        "projectSummary": { "type": "string" },
+        "status": { "type": "string" },
+        "createdAt": { "type": "string" },
+        "members": { "type": "array" }
+      },
+      "required": [
+        "applicantName",
+        "applicantOccupation",
+        "residenceRegion",
+        "residenceCityDistrict",
+        "teamName",
+        "teamSize",
+        "projectSummary",
+        "status",
+        "createdAt",
+        "members"
+      ]
+    }
+  },
+  "firestore": {
+    "/startup_applications/{documentId}": {
+      "schema": "StartupApplication",
+      "description": "Submitted startup applications"
+    }
+  }
+}
